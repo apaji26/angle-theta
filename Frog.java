@@ -35,20 +35,20 @@ public class Frog
    }
    public int jump(boolean cheer)
    {
-	  int theJump;
+   int theJump;
 
       Random showTheJump = new Random();
 
       if (cheer == true)
       {
-	     theJump = (showTheJump.nextInt(maxDistCEJ - -3 + 1) + 1);
-	  }
-	  else
-	  {
-		 theJump = showTheJump.nextInt(maxDistJump - 0 + 1) + 1;
-	  }
+      theJump = (showTheJump.nextInt(maxDistCEJ - -3 + 1) + 1);
+   }
+   else
+   {
+   theJump = showTheJump.nextInt(maxDistJump - 0 + 1) + 1;
+   }
 
-	  return theJump;
+   return theJump;
    }
    public String getFrogName()
    {
