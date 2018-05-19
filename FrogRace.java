@@ -91,11 +91,15 @@ public class FrogRace
             
             drawSpaces(toJump1);
             System.out.println("($1)-($1)");
+            drawSpaces(toJump1);
             System.out.println("/_______\\");
+            drawSpaces(toJump1);
             System.out.println("\\_______/");
             drawSpaces(toJump2);
             System.out.println("($2)-($2)");
+            drawSpaces(toJump2);
             System.out.println("/_______\\");
+            drawSpaces(toJump2);
             System.out.println("\\_______/");
             //toJump = totSpace + 1;
             
