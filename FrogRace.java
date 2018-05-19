@@ -97,7 +97,7 @@ public class FrogRace
    System.out.println("($2)-($2)");
    System.out.println("/_______\\");
    System.out.println("\\_______/");
-   toJump = totSpace + 1;
+   //toJump = totSpace + 1;
 
    Thread.sleep(100);
 
@@ -144,20 +144,20 @@ public class FrogRace
    }
 
    }
-/*
+
    public static void drawSpaces(int numSpaces)
    {
-   for (int i=1; i<numSpaces; i++)
+      for (int i=1; i<numSpaces; i++)
       {
          System.out.print(" ");
       }
    }
 
-   public static void clear
+   public static void clear()
    {
-   for (int i=1; i<22; i++)
-     {
-        System.out.println("");
-  }
-  }*/
+       for (int i=1; i<22; i++)
+       {
+           System.out.println("");
+       }
+   }
 }

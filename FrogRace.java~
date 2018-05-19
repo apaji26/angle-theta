@@ -13,7 +13,7 @@ public class FrogRace
    public static void main(String[] args) throws InterruptedException
    {
 
-	  while (totSpace < 100);
+ //  while (totSpace < 100);
 
       String froggo1, froggo2;
       boolean cheerNah1,cheerNah2, winna1 = false, winna2 = false;
@@ -48,106 +48,106 @@ public class FrogRace
       System.out.println(froggie1.toString());
       System.out.println(froggie2.toString());
 
-	  do
-	  {
-		 froggie1.jump(cheerNah1);
+   do
+   {
+   froggie1.jump(cheerNah1);
          f1Jump = froggie1.jump(cheerNah1);
 
          if (f1Jump == 0)
          {
-	        System.out.println(froggo1 + " went 0 inches forward");
-	     }
-	     else if (f1Jump < 0)
-	   	 {
-		    System.out.println(froggo1 + " went " + f1Jump + " inches backwards.");
-		 }
-		 else if (f1Jump > 0)
-		 {
-		    System.out.println(froggo1 + " went " + f1Jump + " inches forward.");
-		 }
+         System.out.println(froggo1 + " went 0 inches forward");
+      }
+      else if (f1Jump < 0)
+      {
+      System.out.println(froggo1 + " went " + f1Jump + " inches backwards.");
+   }
+   else if (f1Jump > 0)
+   {
+      System.out.println(froggo1 + " went " + f1Jump + " inches forward.");
+   }
 
-		 toJump1 = toJump1 + f1Jump;
+   toJump1 = toJump1 + f1Jump;
 
          froggie2.jump(cheerNah2);
          f2Jump = froggie2.jump(cheerNah2);/*
          if (f2Jump == 0)
-	     {
-	        System.out.println(froggo2 + " went 0 inches forward");
-	        System.out.println();
-		 }
-		 else if (f2Jump < 0)
-		 {
-		    System.out.println(froggo2 + " went " + f2Jump + " inches backwards.");
-		    System.out.println();
-		 }
-		 else if (f2Jump > 0)
-		 {
-		    System.out.println(froggo2 + " went " + f2Jump + " inches forward.");
-		    System.out.println();
-		 }*/
+      {
+         System.out.println(froggo2 + " went 0 inches forward");
+         System.out.println();
+   }
+   else if (f2Jump < 0)
+   {
+      System.out.println(froggo2 + " went " + f2Jump + " inches backwards.");
+      System.out.println();
+   }
+   else if (f2Jump > 0)
+   {
+      System.out.println(froggo2 + " went " + f2Jump + " inches forward.");
+      System.out.println();
+   }*/
 
-		 toJump2 = toJump2 + f2Jump;
+   toJump2 = toJump2 + f2Jump;
 
 
-		 drawSpaces(toJump1);
-		 System.out.println("($1)-($1)");
-		 System.out.println("/_______\\");
-		 System.out.println("\\_______/");
-		 drawSpaces(toJump2);
-		 System.out.println("($2)-($2)");
-		 System.out.println("/_______\\");
-		 System.out.println("\\_______/");
-		 toJump = totSpace + 1;
+   drawSpaces(toJump1);
+   System.out.println("($1)-($1)");
+   System.out.println("/_______\\");
+   System.out.println("\\_______/");
+   drawSpaces(toJump2);
+   System.out.println("($2)-($2)");
+   System.out.println("/_______\\");
+   System.out.println("\\_______/");
+   toJump = totSpace + 1;
 
-		 Thread.sleep(100);
+   Thread.sleep(100);
 
-	     clear();
+      clear();
 
-		 /*
-		 System.out.println(froggo1 + " has jumped a total of " + toJump1 + " inches.");
-		 System.out.println(froggo2 + " has jumped a total of " + toJump2 + " inches.\n");
+   /*
+   System.out.println(froggo1 + " has jumped a total of " + toJump1 + " inches.");
+   System.out.println(froggo2 + " has jumped a total of " + toJump2 + " inches.\n");
 */
 
          if (toJump1 >= 96 && toJump2 >= 96)
          {
-	        winna1 = true;
-	        winna2 = true;
-		 }
-		 else if (toJump1 >= 96 && toJump2 < 96)
-		 {
-	        winna1 = true;
-	        winna2 = false;
-		 }
-		 else if (toJump1 < 96 && toJump2 >= 96)
-		 {
-		    winna1 = false;
-		    winna2 = true;
-		 }
-	  }
-	  while(toJump1 < 96 && toJump2 < 96);
+         winna1 = true;
+         winna2 = true;
+   }
+   else if (toJump1 >= 96 && toJump2 < 96)
+   {
+         winna1 = true;
+         winna2 = false;
+   }
+   else if (toJump1 < 96 && toJump2 >= 96)
+   {
+      winna1 = false;
+      winna2 = true;
+   }
+   }
+   while(toJump1 < 96 && toJump2 < 96);
 
       if (winna1 == true && winna2 == true)
       {
-	     System.out.println("Both froggos are winnas!");
-	     System.out.println(froggie1.toString());
-	     System.out.println(froggie2.toString());
-	  }
-	  else if (winna1 == true && winna2 == false)
-	  {
-	     System.out.println("The winna is " + froggo1 + "!");
-	     System.out.println(froggie1.toString());
-	  }
-	  else if (winna1 == false && winna2 == true)
-	  {
-	     System.out.println("The winna is " + froggo2 + "!");
-	     System.out.println(froggie2.toString());
-	  }
+      System.out.println("Both froggos are winnas!");
+      System.out.println(froggie1.toString());
+      System.out.println(froggie2.toString());
+   }
+   else if (winna1 == true && winna2 == false)
+   {
+      System.out.println("The winna is " + froggo1 + "!");
+      System.out.println(froggie1.toString());
+   }
+   else if (winna1 == false && winna2 == true)
+   {
+      System.out.println("The winna is " + froggo2 + "!");
+      System.out.println(froggie2.toString());
+   }
 
    }
 /*
    public static void drawSpaces(int numSpaces)
    {
-	  for (int i=1; i<numSpaces; i++)
+   for (int i=1; i<numSpaces; i++)
       {
          System.out.print(" ");
       }
@@ -155,9 +155,9 @@ public class FrogRace
 
    public static void clear
    {
-	  for (int i=1; i<22; i++)
+   for (int i=1; i<22; i++)
      {
         System.out.println("");
-	 }
+  }
   }*/
 }
