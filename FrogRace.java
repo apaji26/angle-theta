@@ -107,10 +107,10 @@ public class FrogRace
             
             clear();
             
-            /*
+            
              System.out.println(froggo1 + " has jumped a total of " + toJump1 + " inches.");
              System.out.println(froggo2 + " has jumped a total of " + toJump2 + " inches.\n");
-             */
+             
             
             if (toJump1 >= 96 && toJump2 >= 96)
             {
