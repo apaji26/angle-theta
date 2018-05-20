@@ -15,7 +15,7 @@ public class FrogRace
         // variables
         String froggo1, froggo2;
         boolean cheerNah1,cheerNah2, winna1 = false, winna2 = false;
-        int f1Jump = 0, f2Jump = 0, toJump1 = 0, toJump2 = 0, toJump = 0;
+        int f1Jump = 0, f2Jump = 0, toJump1 = 0, toJump2 = 0;
                 
         // user starting menu to setup frogs
         System.out.println("Let's have a Frog Race!");
@@ -56,14 +56,17 @@ public class FrogRace
             if (f1Jump == 0)
             {
                 System.out.println(froggo1 + " went 0 inches forward");
+                froggie1.toString();
             }
             else if (f1Jump < 0)
             {
                 System.out.println(froggo1 + " went " + f1Jump + " inches backwards.");
+                froggie1.toString();
             }
             else if (f1Jump > 0)
             {
                 System.out.println(froggo1 + " went " + f1Jump + " inches forward.");
+                froggie1.toString();
             }
             
             toJump1 = toJump1 + f1Jump;
@@ -73,16 +76,19 @@ public class FrogRace
             if (f2Jump == 0)
             {
                 System.out.println(froggo2 + " went 0 inches forward");
+                froggie2.toString();
                 System.out.println();
             }
             else if (f2Jump < 0)
             {
                 System.out.println(froggo2 + " went " + f2Jump + " inches backwards.");
+                froggie2.toString();
                 System.out.println();
             }
             else if (f2Jump > 0)
             {
                 System.out.println(froggo2 + " went " + f2Jump + " inches forward.");
+                froggie2.toString();
                 System.out.println();
             }
             
