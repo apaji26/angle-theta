@@ -12,13 +12,12 @@ public class FrogRace
 {
     public static void main(String[] args) throws InterruptedException
     {
-        
-        //  while (totSpace < 100);
-        
+        // variables
         String froggo1, froggo2;
         boolean cheerNah1,cheerNah2, winna1 = false, winna2 = false;
         int f1Jump = 0, f2Jump = 0, toJump1 = 0, toJump2 = 0, toJump = 0;
-        
+                
+        // user starting menu to setup frogs
         System.out.println("Let's have a Frog Race!");
         
         System.out.println("What is the name of the first froggo?");
@@ -28,7 +27,7 @@ public class FrogRace
         
         Frog froggie1 = new Frog(froggo1);
         Frog froggie2 = new Frog(froggo2);
-        
+                
         froggie1.getFrogStrength();
         froggie2.getFrogStrength();
         
@@ -38,7 +37,7 @@ public class FrogRace
         System.out.println(froggie1.toString());
         System.out.println(froggie2.toString());
         
-        
+        // ask user if they would like to cheer
         System.out.println("Do you want to cheer for " + froggo1 + " (True/False)?");
         cheerNah1 = Keyboard.readBoolean();
         
@@ -48,6 +47,7 @@ public class FrogRace
         System.out.println(froggie1.toString());
         System.out.println(froggie2.toString());
         
+        // play the game
         do
         {
             froggie1.jump(cheerNah1);
@@ -69,22 +69,22 @@ public class FrogRace
             toJump1 = toJump1 + f1Jump;
             
             froggie2.jump(cheerNah2);
-            f2Jump = froggie2.jump(cheerNah2);/*
-             if (f2Jump == 0)
-             {
-             System.out.println(froggo2 + " went 0 inches forward");
-             System.out.println();
-             }
-             else if (f2Jump < 0)
-             {
-             System.out.println(froggo2 + " went " + f2Jump + " inches backwards.");
-             System.out.println();
-             }
-             else if (f2Jump > 0)
-             {
-             System.out.println(froggo2 + " went " + f2Jump + " inches forward.");
-             System.out.println();
-             }*/
+            f2Jump = froggie2.jump(cheerNah2);
+            if (f2Jump == 0)
+            {
+                System.out.println(froggo2 + " went 0 inches forward");
+                System.out.println();
+            }
+            else if (f2Jump < 0)
+            {
+                System.out.println(froggo2 + " went " + f2Jump + " inches backwards.");
+                System.out.println();
+            }
+            else if (f2Jump > 0)
+            {
+                System.out.println(froggo2 + " went " + f2Jump + " inches forward.");
+                System.out.println();
+            }
             
             toJump2 = toJump2 + f2Jump;
             
@@ -149,6 +149,9 @@ public class FrogRace
         
     }
     
+    ////////////////////////////////////////////
+    //////        HELPER METHODS     ///////////
+    ////////////////////////////////////////////
     public static void drawSpaces(int numSpaces)
     {
         for (int i=1; i<numSpaces; i++)

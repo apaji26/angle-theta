@@ -12,7 +12,7 @@ import cs1.Keyboard;
 public class Frog
 {
     private String frogName;
-    private int maxDistJump, maxDistCEJ, mRJump;
+    private int maxDistJump, maxDistCEJ;
     
     public Frog(String theFrogName)
     {
